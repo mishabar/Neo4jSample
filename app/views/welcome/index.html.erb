@@ -1,2 +1,7 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Artists</h1>
+<div>Click on an artist to get list of suggested artists</div>
+<ul style="list-style: none;">
+  <% @artists.each do |artist| %>
+    <li><%= link_to artist[1], '/welcome/suggested/' + artist[0].to_s %></li>
+  <% end %>
+</ul>

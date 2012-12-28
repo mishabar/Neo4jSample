@@ -1,0 +1,13 @@
+<h1>Suggested Artists</h1>
+<ul style="list-style: none;">
+  <% @suggested_artists.each do |artist| %>
+      <li><%= artist[1] %>&nbsp;(<%= artist[2] %>)</li>
+  <% end %>
+</ul>
+<hr />
+<div>Click on an artist to get list of suggested artists</div>
+<ul style="list-style: none;">
+  <% @artists.each do |artist| %>
+      <li><%= link_to artist[1], '/welcome/suggested/' + artist[0].to_s %></li>
+  <% end %>
+</ul>

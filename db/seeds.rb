@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-neo = Neography::Rest.new(ENV['NEO4J_URL'] || "http://localhost:7474")
+neo = Neography::Rest.new(ENV['NEO4J_URL'] || "http://91efc7e55:3f4e5a567@e19027147.hosted.neo4j.org:7661")
 
-neo.execute_script("g.clear();")
+#neo.execute_script("g.clear();")
 
 neo.set_node_auto_index_status(true)
 neo.create_node_auto_index
