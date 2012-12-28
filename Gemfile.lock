@@ -57,6 +57,7 @@ GEM
     mime-types (1.19)
     multi_json (1.5.0)
     multi_xml (0.5.1)
+    mysql2 (0.3.11-x86-mingw32)
     neography (1.0.3)
       httparty (>= 0.8.1)
       json (>= 1.6.0)
@@ -118,6 +119,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  mysql2
   neography
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
